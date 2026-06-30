@@ -7,90 +7,31 @@
 <meta name="description" content="Convite Premium Mafer XV" />
 <meta property="og:title" content="Mafer XV" />
 <meta property="og:description" content="Toque para abrir o convite." />
-<meta property="og:image" content="https://convitepremium.github.io/convites-premium/mafer-xv/assets/principal.png" />
-<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/principal.png" />
 <style>
-  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020106;color:#fff;font-family:Arial,Helvetica,sans-serif;touch-action:manipulation}.app{position:fixed;inset:0;background:radial-gradient(circle at center,#111827 0%,#05030a 52%,#000 100%);overflow:hidden}.screen{position:absolute;inset:0;display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .55s ease}.screen.active{opacity:1;pointer-events:auto}.start{z-index:20;background:linear-gradient(180deg,rgba(0,0,0,.52),rgba(0,0,0,.9)),url('assets/principal.png') center/cover}.start::after{content:"";position:absolute;inset:0;backdrop-filter:blur(7px);background:rgba(0,0,0,.25)}.start-card{position:relative;z-index:2;width:min(88vw,420px);padding:28px 22px;border:1px solid rgba(255,221,130,.26);border-radius:28px;text-align:center;background:rgba(5,5,12,.72);box-shadow:0 28px 90px rgba(0,0,0,.7)}.brand{font-size:12px;letter-spacing:4px;color:#ffd77b;margin-bottom:14px}.start-card img{width:100%;border-radius:18px;display:block;box-shadow:0 16px 42px rgba(0,0,0,.55)}.start-card h1{font-size:44px;line-height:.95;margin:20px 0 8px}.start-card p{margin:0 0 18px;color:#ddd;font-size:15px;line-height:1.4}.gold-btn{border:0;border-radius:999px;padding:16px 26px;background:linear-gradient(135deg,#fff0a6,#d19a28 65%,#9c6914);color:#110a02;font-weight:900;font-size:17px;box-shadow:0 15px 40px rgba(218,154,36,.33);cursor:pointer;animation:pulse 1.9s infinite}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}#intro video{width:100vw;height:100vh;object-fit:cover;background:#000}.image-stage{position:relative;width:100vw;height:100vh;display:grid;place-items:center;background:#020106}.art-wrap{position:relative;height:100vh;max-height:100vh;aspect-ratio:928/1536}.art{width:100%;height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none}.hotspot{position:absolute;border:0;background:rgba(255,255,255,0);cursor:pointer}.hotspot:focus-visible{outline:2px solid #ffd76b}.close{position:absolute;right:14px;top:calc(14px + env(safe-area-inset-top));z-index:5;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.48);color:white;font-size:28px;font-weight:400;line-height:46px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.35)}.hint{position:absolute;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:3;padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12);font-size:12px;color:#eee;opacity:.72}.fade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .38s ease;z-index:15}.fade.on{opacity:1}.loader{position:absolute;inset:0;z-index:18;display:none;place-items:center;background:#020106}.loader.show{display:grid}.loader-box{text-align:center}.spark{font-size:42px;animation:spin 1.6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.loader p{letter-spacing:3px;color:#ffd77b;font-size:12px;margin-top:18px}.audio-toggle{position:absolute;left:14px;top:calc(14px + env(safe-area-inset-top));z-index:6;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.38);color:white;font-size:18px}@media(max-aspect-ratio:928/1536){.art-wrap{width:100vw;height:auto;aspect-ratio:928/1536}.art{width:100%;height:auto}.image-stage{align-items:center}}@media(min-aspect-ratio:928/1536){.art-wrap{height:100vh;width:auto}} 
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020106;color:#fff;font-family:Arial,Helvetica,sans-serif;touch-action:manipulation}.app{position:fixed;inset:0;background:#020106;overflow:hidden}.screen{position:absolute;inset:0;display:grid;place-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .45s ease,visibility .45s}.screen.active{opacity:1;visibility:visible;pointer-events:auto}.start{z-index:20;background:linear-gradient(180deg,rgba(0,0,0,.20),rgba(0,0,0,.92)),url('assets/principal.png') center/cover}.start::after{content:"";position:absolute;inset:0;backdrop-filter:blur(6px);background:rgba(0,0,0,.24)}.start-card{position:relative;z-index:2;width:min(88vw,430px);padding:24px 20px;border:1px solid rgba(255,221,130,.26);border-radius:28px;text-align:center;background:rgba(5,5,12,.76);box-shadow:0 28px 90px rgba(0,0,0,.7)}.brand{font-size:12px;letter-spacing:4px;color:#ffd77b;margin-bottom:14px}.start-card img{width:100%;border-radius:18px;display:block;box-shadow:0 16px 42px rgba(0,0,0,.55)}.start-card h1{font-size:44px;line-height:.95;margin:20px 0 8px}.start-card p{margin:0 0 18px;color:#ddd;font-size:15px;line-height:1.4}.gold-btn{border:0;border-radius:999px;padding:16px 26px;background:linear-gradient(135deg,#fff0a6,#d19a28 65%,#9c6914);color:#110a02;font-weight:900;font-size:17px;box-shadow:0 15px 40px rgba(218,154,36,.33);cursor:pointer;animation:pulse 1.8s infinite}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}#intro video{width:100vw;height:100vh;object-fit:cover;background:#000}.image-stage{position:relative;width:100vw;height:100vh;display:grid;place-items:center;background:#020106}.art-wrap{position:relative;height:100vh;max-height:100vh;aspect-ratio:928/1536}.art{width:100%;height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none}.hotspot{position:absolute;border:0;background:rgba(255,255,255,0);cursor:pointer;z-index:4}.hotspot:active{background:rgba(255,215,120,.18)}body.debug .hotspot{background:rgba(255,0,0,.22);outline:2px solid rgba(255,255,255,.65)}.close{position:absolute;right:14px;top:calc(14px + env(safe-area-inset-top));z-index:5;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.62);color:white;font-size:32px;line-height:48px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.35);cursor:pointer}.hint{position:absolute;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:3;padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12);font-size:12px;color:#eee;opacity:.7}.fade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .34s ease;z-index:15}.fade.on{opacity:1}.loader{position:absolute;inset:0;z-index:18;display:none;place-items:center;background:#020106}.loader.show{display:grid}.loader-box{text-align:center}.spark{font-size:42px;animation:spin 1.6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.loader p{letter-spacing:3px;color:#ffd77b;font-size:12px;margin-top:18px}.audio-toggle{position:absolute;left:14px;top:calc(14px + env(safe-area-inset-top));z-index:6;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.42);color:white;font-size:18px;cursor:pointer}@media(max-aspect-ratio:928/1536){.art-wrap{width:100vw;height:auto;aspect-ratio:928/1536}.art{width:100%;height:auto}.image-stage{align-items:center}}@media(min-aspect-ratio:928/1536){.art-wrap{height:100vh;width:auto}}
 </style>
 </head>
 <body>
-<div class="app" id="app">
-  <audio id="music" src="assets/musica.mp3" loop preload="auto"></audio>
-  <div class="fade" id="fade"></div>
-  <div class="loader" id="loader"><div class="loader-box"><div class="spark">✨</div><p>PREPARANDO O CONVITE</p></div></div>
-
-  <section class="screen start active" id="start">
-    <div class="start-card">
-      <div class="brand">CONVITE PREMIUM</div>
-      <img src="assets/principal.png" alt="Mafer XV">
-      <h1>Mafer XV</h1>
-      <p>Toque para abrir sua experiência.</p>
-      <button class="gold-btn" id="startBtn">Clique para abrir o convite</button>
-    </div>
-  </section>
-
-  <section class="screen" id="intro">
-    <video id="introVideo" src="assets/abertura.mp4" playsinline preload="auto"></video>
-  </section>
-
-  <section class="screen" id="main">
-    <div class="image-stage">
-      <button class="audio-toggle" id="audioBtn" aria-label="Pausar ou tocar música">♪</button>
-      <div class="art-wrap">
-        <img class="art" src="assets/principal.png" alt="Convite Mafer XV">
-        <button class="hotspot" style="left:23%;top:58%;width:20%;height:13%" data-action="whatsapp" aria-label="Confirmar presença"></button>
-        <button class="hotspot" style="left:43%;top:58%;width:20%;height:13%" data-action="map" aria-label="Localização"></button>
-        <button class="hotspot" style="left:63%;top:57%;width:28%;height:14%" data-action="page" data-page="gifts" aria-label="Sugestões de presentes"></button>
-      </div>
-      <div class="hint">Toque nos botões da arte</div>
-    </div>
-  </section>
-
-  <section class="screen" id="gifts">
-    <div class="image-stage">
-      <button class="close" data-action="back" aria-label="Voltar">×</button>
-      <div class="art-wrap"><img class="art" src="assets/presentes.png" alt="Sugestões de presentes"></div>
-    </div>
-  </section>
+<div class="app">
+<audio id="music" src="assets/musica.mp3" loop preload="auto"></audio>
+<div class="fade" id="fade"></div>
+<div class="loader" id="loader"><div class="loader-box"><div class="spark">✨</div><p>PREPARANDO O CONVITE</p></div></div>
+<section class="screen start active" id="start"><div class="start-card"><div class="brand">CONVITE PREMIUM</div><img src="assets/principal.png" alt="Mafer XV"><h1>Mafer XV</h1><p>Toque para abrir sua experiência.</p><button class="gold-btn" id="startBtn">Clique para abrir o convite</button></div></section>
+<section class="screen" id="intro"><video id="introVideo" src="assets/abertura.mp4" playsinline preload="auto"></video></section>
+<section class="screen" id="main"><div class="image-stage"><button class="audio-toggle" id="audioBtn" aria-label="Pausar ou tocar música">♪</button><div class="art-wrap"><img class="art" src="assets/principal.png" alt="Convite Mafer XV"><button class="hotspot" style="left:18%;top:56%;width:27%;height:18%" data-action="whatsapp" aria-label="Confirmar presença"></button><button class="hotspot" style="left:39%;top:56%;width:24%;height:18%" data-action="map" aria-label="Localização"></button><button class="hotspot" style="left:58%;top:55%;width:36%;height:19%" data-action="page" data-page="gifts" aria-label="Sugestões de presentes"></button></div><div class="hint">Toque nos botões da arte</div></div></section>
+<section class="screen" id="gifts"><div class="image-stage"><button class="close" data-action="back" aria-label="Voltar">×</button><div class="art-wrap"><img class="art" src="assets/presentes.png" alt="Sugestões de presentes"></div></div></section>
 </div>
 <script>
-const CONFIG = {
-  whatsapp: 'https://wa.me/558894897535?text=Ol%C3%A1%21%20Confirmo%20minha%20presen%C3%A7a%20no%20Mafer%20XV.',
-  map: 'https://www.google.com/maps/search/?api=1&query=Mafer%20XV'
-};
-const screens = [...document.querySelectorAll('.screen')];
-const music = document.getElementById('music');
-const video = document.getElementById('introVideo');
-const fade = document.getElementById('fade');
-const loader = document.getElementById('loader');
-let current = 'start';
-function show(id){screens.forEach(s=>s.classList.toggle('active',s.id===id));current=id;}
-function transitionTo(id, delay=450){fade.classList.add('on');setTimeout(()=>{show(id);fade.classList.remove('on');},delay)}
-async function startExperience(){
-  try{await document.documentElement.requestFullscreen?.()}catch(e){}
-  try{music.volume=.72; await music.play()}catch(e){}
-  loader.classList.add('show');
-  fade.classList.add('on');
-  setTimeout(async()=>{
-    loader.classList.remove('show'); show('intro'); fade.classList.remove('on');
-    try{video.currentTime=0; await video.play()}catch(e){setTimeout(()=>transitionTo('main'),900)}
-  },900);
-}
-video.addEventListener('ended',()=>transitionTo('main'));
-setTimeout(()=>{ if(current==='intro' && !video.paused) transitionTo('main') },16000);
-document.getElementById('startBtn').addEventListener('click',startExperience);
-document.addEventListener('click',e=>{
-  const btn=e.target.closest('[data-action]'); if(!btn) return;
-  const action=btn.dataset.action;
-  if(action==='page') transitionTo(btn.dataset.page);
-  if(action==='back') transitionTo('main');
-  if(action==='whatsapp') window.open(CONFIG.whatsapp,'_blank');
-  if(action==='map') window.open(CONFIG.map,'_blank');
-});
-document.getElementById('audioBtn').addEventListener('click',()=>{
-  if(music.paused){music.play(); document.getElementById('audioBtn').textContent='♪'}
-  else{music.pause(); document.getElementById('audioBtn').textContent='×'}
-});
+const CONFIG={whatsapp:'https://wa.me/558894897535?text=Ol%C3%A1%21%20Confirmo%20minha%20presen%C3%A7a%20no%20Mafer%20XV.',map:'https://www.google.com/maps/search/?api=1&query=Mafer%20XV'};
+if(location.search.includes('debug=1')) document.body.classList.add('debug');
+const screens=[...document.querySelectorAll('.screen')],music=document.getElementById('music'),video=document.getElementById('introVideo'),fade=document.getElementById('fade'),loader=document.getElementById('loader'),audioBtn=document.getElementById('audioBtn');let current='start';
+function show(id){screens.forEach(s=>s.classList.toggle('active',s.id===id));current=id}
+function transitionTo(id){fade.classList.add('on');setTimeout(()=>{show(id);fade.classList.remove('on')},360)}
+async function startExperience(){try{await document.documentElement.requestFullscreen?.()}catch(e){}try{music.volume=.70;await music.play()}catch(e){}loader.classList.add('show');fade.classList.add('on');setTimeout(async()=>{loader.classList.remove('show');show('intro');fade.classList.remove('on');try{video.currentTime=0;await video.play()}catch(e){setTimeout(()=>transitionTo('main'),700)}},800)}
+video.addEventListener('ended',()=>transitionTo('main'));setTimeout(()=>{if(current==='intro')transitionTo('main')},17000);document.getElementById('startBtn').addEventListener('click',startExperience);
+document.addEventListener('click',e=>{const btn=e.target.closest('[data-action]');if(!btn)return;const a=btn.dataset.action;if(a==='page')transitionTo(btn.dataset.page);if(a==='back')transitionTo('main');if(a==='whatsapp')window.open(CONFIG.whatsapp,'_blank');if(a==='map')window.open(CONFIG.map,'_blank')});
+audioBtn.addEventListener('click',()=>{if(music.paused){music.play();audioBtn.textContent='♪'}else{music.pause();audioBtn.textContent='×'}});
 </script>
 </body>
 </html>

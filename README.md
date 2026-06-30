@@ -1,15 +1,9 @@
-# Convite Premium Engine V1
+# Convite Premium Engine V1.1
 
-Versão funcional com:
+Fluxo funcional:
+- tela inicial obrigatória;
 - vídeo de abertura;
-- música contínua;
+- música contínua após toque;
 - tela principal com botões invisíveis;
-- página interna de sugestões de presentes;
-- botão X para voltar;
-- link direto por pasta (`/mafer-xv/`).
-
-## Para publicar
-Suba todos os arquivos deste pacote por cima do repositório GitHub Pages.
-
-## Editar links
-Abra `mafer-xv/index.html` e procure por `CONFIG` no final do arquivo.
+- página interna de sugestões;
+- botão X para voltar.
