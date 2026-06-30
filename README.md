@@ -1,9 +1,15 @@
-# Convite Premium Engine V1.1
+# Convite Premium Engine V1
 
-Fluxo funcional:
-- tela inicial obrigatória;
-- vídeo de abertura;
-- música contínua após toque;
-- tela principal com botões invisíveis;
-- página interna de sugestões;
-- botão X para voltar.
+Versão funcional sem Canva:
+
+- Tela inicial obrigatória para liberar áudio no celular.
+- Vídeo de abertura.
+- Música contínua em loop.
+- Tela principal com hotspots invisíveis.
+- Sugestões de presentes como tela interna.
+- `?debug=1` mostra as áreas clicáveis.
+
+Links:
+
+- `/mafer-xv/`
+- `/mafer-xv/?debug=1`

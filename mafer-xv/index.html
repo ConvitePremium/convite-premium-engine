@@ -1,37 +1,106 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
-<title>Mafer XV</title>
-<meta name="description" content="Convite Premium Mafer XV" />
-<meta property="og:title" content="Mafer XV" />
-<meta property="og:description" content="Toque para abrir o convite." />
-<meta property="og:image" content="assets/principal.png" />
-<style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020106;color:#fff;font-family:Arial,Helvetica,sans-serif;touch-action:manipulation}.app{position:fixed;inset:0;background:#020106;overflow:hidden}.screen{position:absolute;inset:0;display:grid;place-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .45s ease,visibility .45s}.screen.active{opacity:1;visibility:visible;pointer-events:auto}.start{z-index:20;background:linear-gradient(180deg,rgba(0,0,0,.20),rgba(0,0,0,.92)),url('assets/principal.png') center/cover}.start::after{content:"";position:absolute;inset:0;backdrop-filter:blur(6px);background:rgba(0,0,0,.24)}.start-card{position:relative;z-index:2;width:min(88vw,430px);padding:24px 20px;border:1px solid rgba(255,221,130,.26);border-radius:28px;text-align:center;background:rgba(5,5,12,.76);box-shadow:0 28px 90px rgba(0,0,0,.7)}.brand{font-size:12px;letter-spacing:4px;color:#ffd77b;margin-bottom:14px}.start-card img{width:100%;border-radius:18px;display:block;box-shadow:0 16px 42px rgba(0,0,0,.55)}.start-card h1{font-size:44px;line-height:.95;margin:20px 0 8px}.start-card p{margin:0 0 18px;color:#ddd;font-size:15px;line-height:1.4}.gold-btn{border:0;border-radius:999px;padding:16px 26px;background:linear-gradient(135deg,#fff0a6,#d19a28 65%,#9c6914);color:#110a02;font-weight:900;font-size:17px;box-shadow:0 15px 40px rgba(218,154,36,.33);cursor:pointer;animation:pulse 1.8s infinite}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}#intro video{width:100vw;height:100vh;object-fit:cover;background:#000}.image-stage{position:relative;width:100vw;height:100vh;display:grid;place-items:center;background:#020106}.art-wrap{position:relative;height:100vh;max-height:100vh;aspect-ratio:928/1536}.art{width:100%;height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none}.hotspot{position:absolute;border:0;background:rgba(255,255,255,0);cursor:pointer;z-index:4}.hotspot:active{background:rgba(255,215,120,.18)}body.debug .hotspot{background:rgba(255,0,0,.22);outline:2px solid rgba(255,255,255,.65)}.close{position:absolute;right:14px;top:calc(14px + env(safe-area-inset-top));z-index:5;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.62);color:white;font-size:32px;line-height:48px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.35);cursor:pointer}.hint{position:absolute;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:3;padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12);font-size:12px;color:#eee;opacity:.7}.fade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .34s ease;z-index:15}.fade.on{opacity:1}.loader{position:absolute;inset:0;z-index:18;display:none;place-items:center;background:#020106}.loader.show{display:grid}.loader-box{text-align:center}.spark{font-size:42px;animation:spin 1.6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.loader p{letter-spacing:3px;color:#ffd77b;font-size:12px;margin-top:18px}.audio-toggle{position:absolute;left:14px;top:calc(14px + env(safe-area-inset-top));z-index:6;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.42);color:white;font-size:18px;cursor:pointer}@media(max-aspect-ratio:928/1536){.art-wrap{width:100vw;height:auto;aspect-ratio:928/1536}.art{width:100%;height:auto}.image-stage{align-items:center}}@media(min-aspect-ratio:928/1536){.art-wrap{height:100vh;width:auto}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mafer XV</title>
+  <meta name="theme-color" content="#03020a" />
+  <meta property="og:title" content="Mafer XV" />
+  <meta property="og:description" content="Toque para abrir o convite." />
+  <meta property="og:image" content="assets/principal.png" />
+  <style>
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#03020a;color:#fff;font-family:Arial,Helvetica,sans-serif}.app{position:fixed;inset:0;background:#03020a;display:grid;place-items:center}.screen{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:#03020a}.screen.active{display:flex}.start{z-index:20;display:flex;flex-direction:column;gap:18px;text-align:center;padding:28px;background:radial-gradient(circle at 50% 30%,rgba(51,35,79,.9),#03020a 70%)}.start h1{font-size:clamp(42px,13vw,90px);margin:0;line-height:.95}.start p{margin:0;color:#d7d1df;font-size:18px}.start button,.gold-btn{border:0;border-radius:999px;background:linear-gradient(135deg,#fff0a9,#d49c2d 55%,#8e5d12);color:#120a02;font-weight:900;font-size:18px;padding:17px 28px;box-shadow:0 18px 50px rgba(245,190,70,.28);cursor:pointer}.brand{letter-spacing:7px;color:#f3c969;font-size:12px;font-weight:700}.video{width:100%;height:100%;object-fit:cover;background:#000}.fade{position:absolute;inset:0;background:#03020a;opacity:0;pointer-events:none;transition:opacity .8s ease;z-index:10}.fade.on{opacity:1}.imageStage{position:relative;height:100dvh;width:100vw;display:flex;align-items:center;justify-content:center;background:#03020a}.art{height:100dvh;width:auto;max-width:100vw;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none}.hotspot{position:absolute;border:0;background:rgba(255,255,255,0);cursor:pointer}.debug .hotspot{background:rgba(255,0,0,.28)!important;border:2px solid rgba(255,255,255,.85)}.hint{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(8px);border-radius:999px;padding:8px 13px;color:#ddd;font-size:12px;opacity:.85}.panel{position:absolute;inset:0;background:#03020a;display:none;align-items:center;justify-content:center;z-index:5}.panel.active{display:flex}.close{position:absolute;top:max(16px,env(safe-area-inset-top));right:18px;z-index:9;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.20);background:rgba(0,0,0,.45);color:white;font-size:28px;font-weight:700;line-height:1;cursor:pointer}.loader{position:absolute;inset:0;background:#03020a;z-index:30;display:none;place-items:center;text-align:center}.loader.active{display:grid}.loader div{animation:pulse 1.2s infinite alternate}.loader .spark{font-size:38px;margin-bottom:14px}.loader p{color:#d9d1df;margin:0}@keyframes pulse{from{opacity:.55;transform:scale(.98)}to{opacity:1;transform:scale(1)}}@media (orientation:landscape){.art{width:auto;height:100dvh}.start h1{font-size:52px}}
+  </style>
 </head>
 <body>
-<div class="app">
-<audio id="music" src="assets/musica.mp3" loop preload="auto"></audio>
-<div class="fade" id="fade"></div>
-<div class="loader" id="loader"><div class="loader-box"><div class="spark">✨</div><p>PREPARANDO O CONVITE</p></div></div>
-<section class="screen start active" id="start"><div class="start-card"><div class="brand">CONVITE PREMIUM</div><img src="assets/principal.png" alt="Mafer XV"><h1>Mafer XV</h1><p>Toque para abrir sua experiência.</p><button class="gold-btn" id="startBtn">Clique para abrir o convite</button></div></section>
-<section class="screen" id="intro"><video id="introVideo" src="assets/abertura.mp4" playsinline preload="auto"></video></section>
-<section class="screen" id="main"><div class="image-stage"><button class="audio-toggle" id="audioBtn" aria-label="Pausar ou tocar música">♪</button><div class="art-wrap"><img class="art" src="assets/principal.png" alt="Convite Mafer XV"><button class="hotspot" style="left:18%;top:56%;width:27%;height:18%" data-action="whatsapp" aria-label="Confirmar presença"></button><button class="hotspot" style="left:39%;top:56%;width:24%;height:18%" data-action="map" aria-label="Localização"></button><button class="hotspot" style="left:58%;top:55%;width:36%;height:19%" data-action="page" data-page="gifts" aria-label="Sugestões de presentes"></button></div><div class="hint">Toque nos botões da arte</div></div></section>
-<section class="screen" id="gifts"><div class="image-stage"><button class="close" data-action="back" aria-label="Voltar">×</button><div class="art-wrap"><img class="art" src="assets/presentes.png" alt="Sugestões de presentes"></div></div></section>
-</div>
-<script>
-const CONFIG={whatsapp:'https://wa.me/558894897535?text=Ol%C3%A1%21%20Confirmo%20minha%20presen%C3%A7a%20no%20Mafer%20XV.',map:'https://www.google.com/maps/search/?api=1&query=Mafer%20XV'};
-if(location.search.includes('debug=1')) document.body.classList.add('debug');
-const screens=[...document.querySelectorAll('.screen')],music=document.getElementById('music'),video=document.getElementById('introVideo'),fade=document.getElementById('fade'),loader=document.getElementById('loader'),audioBtn=document.getElementById('audioBtn');let current='start';
-function show(id){screens.forEach(s=>s.classList.toggle('active',s.id===id));current=id}
-function transitionTo(id){fade.classList.add('on');setTimeout(()=>{show(id);fade.classList.remove('on')},360)}
-async function startExperience(){try{await document.documentElement.requestFullscreen?.()}catch(e){}try{music.volume=.70;await music.play()}catch(e){}loader.classList.add('show');fade.classList.add('on');setTimeout(async()=>{loader.classList.remove('show');show('intro');fade.classList.remove('on');try{video.currentTime=0;await video.play()}catch(e){setTimeout(()=>transitionTo('main'),700)}},800)}
-video.addEventListener('ended',()=>transitionTo('main'));setTimeout(()=>{if(current==='intro')transitionTo('main')},17000);document.getElementById('startBtn').addEventListener('click',startExperience);
-document.addEventListener('click',e=>{const btn=e.target.closest('[data-action]');if(!btn)return;const a=btn.dataset.action;if(a==='page')transitionTo(btn.dataset.page);if(a==='back')transitionTo('main');if(a==='whatsapp')window.open(CONFIG.whatsapp,'_blank');if(a==='map')window.open(CONFIG.map,'_blank')});
-audioBtn.addEventListener('click',()=>{if(music.paused){music.play();audioBtn.textContent='♪'}else{music.pause();audioBtn.textContent='×'}});
-</script>
+  <div class="app" id="app">
+    <section class="start screen active" id="startScreen">
+      <div class="brand">CONVITE PREMIUM</div>
+      <h1>Mafer XV</h1>
+      <p>Toque para abrir o convite</p>
+      <button id="startBtn">Abrir convite</button>
+    </section>
+
+    <section class="screen" id="videoScreen">
+      <video class="video" id="introVideo" src="assets/abertura.mp4" playsinline preload="auto"></video>
+    </section>
+
+    <section class="screen" id="mainScreen">
+      <div class="imageStage" id="mainStage">
+        <img class="art" src="assets/principal.png" alt="Convite Mafer XV">
+        <button class="hotspot" data-action="whatsapp" title="Confirmar presença" style="left:28%;top:61%;width:16%;height:10%;"></button>
+        <button class="hotspot" data-action="maps" title="Localização" style="left:43%;top:61%;width:15%;height:10%;"></button>
+        <button class="hotspot" data-action="presentes" title="Sugestões de presentes" style="left:58%;top:61%;width:19%;height:10%;"></button>
+        <div class="hint">Toque nos botões do convite</div>
+      </div>
+    </section>
+
+    <section class="panel" id="presentesScreen">
+      <button class="close" id="closePresentes" aria-label="Voltar">×</button>
+      <div class="imageStage">
+        <img class="art" src="assets/presentes.png" alt="Sugestões de presentes">
+      </div>
+    </section>
+
+    <div class="fade" id="fade"></div>
+    <div class="loader" id="loader"><div><div class="spark">✨</div><p>Preparando seu convite...</p></div></div>
+    <audio id="music" src="assets/musica.mp3" loop preload="auto"></audio>
+  </div>
+
+  <script>
+    const qs = new URLSearchParams(location.search);
+    if (qs.get('debug') === '1') document.body.classList.add('debug');
+
+    const startScreen = document.getElementById('startScreen');
+    const videoScreen = document.getElementById('videoScreen');
+    const mainScreen = document.getElementById('mainScreen');
+    const presentesScreen = document.getElementById('presentesScreen');
+    const startBtn = document.getElementById('startBtn');
+    const video = document.getElementById('introVideo');
+    const music = document.getElementById('music');
+    const fade = document.getElementById('fade');
+    const loader = document.getElementById('loader');
+
+    const WHATSAPP_LINK = 'https://wa.me/5588994103188?text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20Mafer%20XV.';
+    const MAPS_LINK = 'https://www.google.com/maps/search/?api=1&query=local%20do%20evento%20Mafer%20XV';
+
+    function show(el){
+      [startScreen, videoScreen, mainScreen].forEach(s => s.classList.remove('active'));
+      el.classList.add('active');
+    }
+    function fadeOn(){ fade.classList.add('on'); }
+    function fadeOff(){ fade.classList.remove('on'); }
+    async function tryFullscreen(){
+      try { if (document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen(); } catch(e) {}
+    }
+    function transitionToMain(){
+      fadeOn();
+      setTimeout(() => { show(mainScreen); fadeOff(); }, 750);
+    }
+
+    startBtn.addEventListener('click', async () => {
+      await tryFullscreen();
+      loader.classList.add('active');
+      try { music.volume = 0.75; await music.play(); } catch(e) {}
+      setTimeout(async () => {
+        loader.classList.remove('active');
+        show(videoScreen);
+        try { video.currentTime = 0; await video.play(); } catch(e) { transitionToMain(); }
+      }, 900);
+    });
+
+    video.addEventListener('ended', transitionToMain);
+    video.addEventListener('error', transitionToMain);
+
+    document.querySelectorAll('.hotspot').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const action = btn.dataset.action;
+        if (action === 'presentes') presentesScreen.classList.add('active');
+        if (action === 'whatsapp') window.open(WHATSAPP_LINK, '_blank');
+        if (action === 'maps') window.open(MAPS_LINK, '_blank');
+      });
+    });
+    document.getElementById('closePresentes').addEventListener('click', () => presentesScreen.classList.remove('active'));
+  </script>
 </body>
 </html>
